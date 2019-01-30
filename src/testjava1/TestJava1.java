@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package testjava1;
+import java.util.Scanner;
 
 /**
  *
@@ -16,7 +17,10 @@ public class TestJava1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println("Hello Faithfull servant!");
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter your name =");
+        String yourName = input.nextLine();
+        System.out.printf("Hello, faithfull servant %s\n", yourName);
     }
     
 }
